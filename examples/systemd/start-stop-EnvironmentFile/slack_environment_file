@@ -1,8 +1,0 @@
-ROOM=dev_ops
-USER=ubuntu
-EMOJI=ubuntu
-LEVEL=info
-TITLE=\"Left Title\"
-MSG=\"My Message\"
-TITLE_RIGHT=\"Right Title\"
-MSG_RIGHT=\"Message Right\"

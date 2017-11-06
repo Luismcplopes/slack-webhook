@@ -2,5 +2,5 @@ build*
 README.md
 .git
 .gitignore
-examples*
+custom-emojis*
 LICENSE
