@@ -33,7 +33,12 @@
 #
 ######################
 
-SLACK_URL_HOOK="UPDATE-ME"
+echo "Enter a your Slack url WebHook: "
+read userInput
+
+SLACK_URL_HOOK="$userInput"
+
+echo "You just entered $SLACK_URL_HOOK" 
 
 PROJECT="slack-webhooks"
 INSTALL_DIR="/"
@@ -140,9 +145,11 @@ rm $DEB_BUILD_DIR/$PROJECT.tgz
 #
 # Update the SLACK_URL_HOOK field in
 # usr/sbin/slack-webhooks
+# etc/slack-webhooks/slack-webhook
 #
 ######################################
 sed -i "s%<<UPDATE-ME>>%$SLACK_URL_HOOK%g" $DEB_BUILD_DIR/$PACKAGE/usr/sbin/slack-webhook
+sed -i "s%<<UPDATE-ME>>%$SLACK_URL_HOOK%g" $DEB_BUILD_DIR/$PACKAGE/etc/slack-webhooks/slack-webhook
 
 ######################################
 #
@@ -171,6 +178,9 @@ echo " == dpkg -c $PACKAGE.deb"
 echo " =="
 echo " == To install $PACKAGE"
 echo " == sudo dpkg -i $PACKAGE.deb"
+echo " =="
+echo " == To install as a service $PACKAGE"
+echo " == sudo bash /etc/slack-webhooks/install-asservice.sh"
 echo " =="
 echo " == To un-install"
 echo " == sudo dpkg --remove $PROJECT" 

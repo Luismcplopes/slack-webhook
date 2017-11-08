@@ -10,10 +10,10 @@
 
 ENVIRONMENT_FILE="/etc/slack-webhooks/slack_environment_file"
 
-ROOM=dev_ops
-USER=ubuntu
-EMOJI=ubuntu
-LEVEL=info
+ROOM=room
+USER=user
+EMOJI=emoji
+LEVEL=crit
 TITLE="Server Shutting Down!"
 TITLE_RIGHT="Drive Status"
 

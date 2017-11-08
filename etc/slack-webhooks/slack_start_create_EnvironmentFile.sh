@@ -10,10 +10,10 @@
 
 ENVIRONMENT_FILE="/etc/slack-webhooks/slack_environment_file"
 
-ROOM=dev_ops
-USER=ubuntu
-EMOJI=ubuntu
-LEVEL=info
+ROOM=room
+USER=user
+EMOJI=emoji
+LEVEL=good
 TITLE="Server Starting Up!"
 TITLE_RIGHT="Drive Status"
 
