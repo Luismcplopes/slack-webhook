@@ -2,7 +2,7 @@
 This package leet you send messages in to a Slack Channel and can be activated as a service for when server with Ubuntu was turned off or on we received a notification on the slack channel  
 
 
-![https://github.com/Luismcplopes/slack-webhook/blob/master/custom-emojis/slackmessage.jpg](https://github.com/Luismcplopes/slack-webhook/)
+![https://github.com/Luismcplopes/slack-webhook/blob/master/custom-emojis/slackmessage.jpg](https://github.com/Luismcplopes/slack-webhook/blob/master/custom-emojis/slackmessage.jpg)
 
 ## To create you will need
 * Ubuntu 16.04
