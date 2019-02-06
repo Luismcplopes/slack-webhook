@@ -1,36 +1,30 @@
-# Slack-Webhooks
-This package leet you send messages in to a Slack Channel and can be activated as a service for when server with Ubuntu was turned off or on we received a notification on the slack channel  
-
-
-![https://github.com/Luismcplopes/slack-webhook/blob/master/custom-emojis/slackmessage.jpg](https://github.com/Luismcplopes/slack-webhook/blob/master/custom-emojis/slackmessage.jpg)
-
-## To create you will need
-* Ubuntu 16.04
-* Slack Webhook Url
-* Channel name (without #)
-* Emoji name (smiley without :)
-
-
-
-## Create a debian package
-* Build 
-  * `sudo ./build.sh`
-* Install
-  * `sudo dpkg -i slack-webhooks_0.8-amd64.deb`
-* Test
-  * `slack-webhook -r "my_room" -m "test me"`
-* Install as a service
-  * `sudo bash /etc/slack-webhooks/install-asservice.sh`
-* Test the service
-  *  `sudo systemctl restart slack-notify-start-stop.service` 
-* Uninstall
-  * `sudo dpkg --remove slack-webhooks`
-
-## Note about emojis
-
-This example uses the emoji :ubuntu: to display the emoji as a user icon.
-The :ubuntu: emoji does not exist in grab the image from this folder [custom emojis](/custom-emojis)
-
-If you are not familiar with how to do this here is a slack how-to article 
-https://get.slack.help/hc/en-us/articles/206870177-Create-custom-emoji
-
+<h1 id="slack-webhooks">Slack-Webhooks</h1>
+<p>This package leet you send messages in to a Slack Channel and can be activated as a service for when server with Ubuntu was turned off or on we received a notification on the slack channel</p>
+<div class="figure">
+<img src="https://github.com/Luismcplopes/slack-webhook/blob/master/custom-emojis/slackmessage.jpg" alt="https://github.com/Luismcplopes/slack-webhook/blob/master/custom-emojis/slackmessage.jpg" /><p class="caption">https://github.com/Luismcplopes/slack-webhook/blob/master/custom-emojis/slackmessage.jpg</p>
+</div>
+<h2 id="to-create-you-will-need">To create you will need</h2>
+<ul>
+<li>Ubuntu 16.04</li>
+<li>Slack Webhook Url</li>
+<li>Channel name (without #)</li>
+<li>Emoji name (smiley without :)</li>
+</ul>
+<h2 id="create-a-debian-package">Create a debian package</h2>
+<ul>
+<li>Build</li>
+<li><code>sudo ./build.sh</code></li>
+<li>Install</li>
+<li><code>sudo dpkg -i slack-webhooks_0.8-amd64.deb</code></li>
+<li>Test</li>
+<li><code>slack-webhook -r &quot;my_room&quot; -m &quot;test me&quot;</code></li>
+<li>Install as a service</li>
+<li><code>sudo bash /etc/slack-webhooks/install-asservice.sh</code></li>
+<li>Test the service</li>
+<li><code>sudo systemctl restart slack-notify-start-stop.service</code></li>
+<li>Uninstall</li>
+<li><code>sudo dpkg --remove slack-webhooks</code></li>
+</ul>
+<h2 id="note-about-emojis">Note about emojis</h2>
+<p>This example uses the emoji :ubuntu: to display the emoji as a user icon. The :ubuntu: emoji does not exist in grab the image from this folder <a href="/custom-emojis">custom emojis</a></p>
+<p>If you are not familiar with how to do this here is a slack how-to article https://get.slack.help/hc/en-us/articles/206870177-Create-custom-emoji</p>
